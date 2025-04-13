@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider's Fortune Teller</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <h1>click the wizard for a fortune</h1>
+        <p>(if u want)</p>
+        <button id="fortuneButton" class="fortuneBtn" aria-label="wizard button" onclick="getFortune();">
+            yes, click me!
+            <img class="wizard" src="img/catWizardCol.png" alt="cat wizard, click on him to get a fortune!" width="303px" height="394px"></button>
+        <div class="fortuneBox">
+            <p id="fortuneTellerBox">
+                <script src="js/fortuneTeller.js"></script>
+            </p>
+        </div>
+        <p id="disclaimer">disclaimer: fortunes not guaranteed to come true, but i will take credit if they do</p>
+    </main>
+    <footer class="footer"><p><a href="https://grillychee.nekoweb.org">🕷️ to spider's home page 🕷️</a></p></footer>
+</body>
+</html>
