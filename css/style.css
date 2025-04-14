@@ -156,8 +156,36 @@ main h1 {
 }
 
 /* smaller screen sizes */
+@media only screen and (max-width: 1200px) {
+    main { 
+        width: 60%;
+    }
 
-@media only screen and (max-width: 1120px) {
+    .fortuneBtn {
+        max-width: 230px;
+    } 
+
+    .fortuneBox {
+        background-size: contain;
+        width: 360px;
+        height: 260px;
+        margin: 10px auto;
+    }
+
+    #fortuneTellerBox {
+        max-width: 180px;
+        font-size: 1.2rem;
+        text-wrap: wrap;
+    }
+
+    #disclaimer {
+        margin: 0 40px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
     
     main {
         width: 60%;
@@ -182,7 +210,7 @@ main h1 {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
     body {
         animation-duration: 0s;
     }
@@ -210,7 +238,7 @@ main h1 {
         width: 200px;
         height: auto;
         margin: 5px auto;
-        font-size: 2.15rem;
+        font-size: 1.8rem;
     }
 
     .fortuneBox {
