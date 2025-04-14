@@ -8,4 +8,5 @@ art is by myself.
 color palette: [Summer Cream](https://lospec.com/palette-list/summer-cream) by [PIXELNACHO](https://lospec.com/pixelnacho).
 
 TODO:
+* URGENT: page looks messed up on my other device & not sure why yet
 * add more fortunes :)
