@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 html {
-    font-family: "Arial", sans-serif;
+    font-family: "Fredoka", "Arial", sans-serif;
     font-size: 16px;
 }
 
@@ -49,6 +51,7 @@ main h1 {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-family: inherit;
     color: #361d2b;
     border-radius: 10px;
 }
