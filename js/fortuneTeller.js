@@ -26,6 +26,11 @@ const randomNounNewYear = nounsNewYear[Math.floor(Math.random()*nounsNewYear.len
 const nounFocus = ["wellbeing", "health", "dinner", "hobbies", "creative pursuits", "relationships", "self-care", "confidence", "laundry pile", "finances", "refreshing beverage", "social life", "self-improvement", "learning", "work", "dreams", "skill-building", "fitness", "feelings", "hydration", "meetings", "wish list"];
 const randomFocus = nounFocus[Math.floor(Math.random()*nounFocus.length)];
 
+const nounCheck = ["shoe", "jacket pockets", "pants pockets", "couch", "backpack", "wallet", "phone", "email", "toilet", "mailbox", "fridge", "washing machine", "subscription renewals", "clock", "bag"];
+const randomCheck = nounCheck[Math.floor(Math.random()*nounCheck.length)];
+
+const nounEnemy = ["ghosts", "boss", "nemesis", "hydration levels", "fears", "nightmares", "eldritch horrors", "tummy grumbles", "chores", "dental floss", "laundry pile", "vices", "work day", "errands"];
+const randomEnemy = nounEnemy[Math.floor(Math.random()*nounEnemy.length)];
 
 // FORTUNES
 const fortune1 = `If you see a ${randomAnimal} today, it will bring you luck. As for the type of luck, well...`;
@@ -36,10 +41,12 @@ const fortune5 = `You might do well to avoid the color ${randomColor} today. Jus
 const fortune6 = `You will soon meet someone with a great passion for ${randomInterest}. How curious.`;
 const fortune7 = `Patience! A new ${randomNounNewYear} will come with the new year. Won't that be fun?`;
 const fortune8 = `Now is a good time to focus on your ${randomFocus}.`;
+const fortune9 = `I have an inkling that you should check your ${randomCheck}. But for what?`;
+const fortune10 = `Take heart, soon you will conquer your ${randomEnemy}. Oh, how you will laugh!`;
 
 // FORTUNE TELLER
 const min = 1;
-const max = 8;
+const max = 10;
 
 let randomNumber = Math.floor((Math.random() * max) + min);
 let selectedFortune;
@@ -57,8 +64,12 @@ if (randomNumber == 1) {
   selectedFortune = fortune6;
 } else if (randomNumber == 7) {
   selectedFortune = fortune7;
-} else {
+} else if (randomNumber == 8) {
   selectedFortune = fortune8;
+} else if (randomNumber == 9) {
+  selectedFortune = fortune9;
+} else {
+  selectedFortune = fortune10;
 }
 
 console.log(selectedFortune);
@@ -72,4 +83,3 @@ function changeContent() {
 
 button.addEventListener('click', changeContent);
 }
-
